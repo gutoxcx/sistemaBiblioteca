@@ -8,11 +8,14 @@ using namespace std;
 class Livro {
 private:
     int idLivro;
-    string nomeLivro;
+    string tituloLivro;
     string autorLivro;
 public:
     Livro();
     Livro(int idLivro, string nomeLivro, string autorLivro);
+    int getIdLivro();
+    string getNomeLivro();
+    string getAutorLivro();
 };
 
 #endif
