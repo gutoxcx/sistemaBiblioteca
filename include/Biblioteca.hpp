@@ -9,14 +9,15 @@ using namespace std;
 class Biblioteca {
 private:
     Livro livros[200];
+    void getInfoLivro(Livro livro);
+    int indexUltimoLivro = 0;
     bool isLivroExistente(string tituloLivro);
 public:
     Biblioteca();
     void adicionarLivro(Livro livro);
-    void removerLivro(string tituloLivro);
-    void buscarPeloId(int idLivro);
+    void buscarPeloTitulo(string tituloLivro);
     void buscarPeloAutor(string autor);
-    void mostrarAllLivros();
+    void mostrarTodosOsLivros();
 };
 
 #endif

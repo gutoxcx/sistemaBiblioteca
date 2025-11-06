@@ -14,7 +14,7 @@ public:
     Livro();
     Livro(int idLivro, string nomeLivro, string autorLivro);
     int getIdLivro();
-    string getNomeLivro();
+    string getTituloLivro();
     string getAutorLivro();
 };
 

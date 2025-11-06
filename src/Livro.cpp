@@ -9,3 +9,15 @@ Livro::Livro(int p_idLivro, string p_tituloLivro, string p_autorLivro) {
     tituloLivro = p_idLivro;
     autorLivro = p_autorLivro;
 }
+
+int Livro::getIdLivro() {
+    return idLivro;
+}
+
+string Livro::getTituloLivro() {
+    return tituloLivro;
+}
+
+string Livro::getAutorLivro() {
+    return autorLivro;
+}
