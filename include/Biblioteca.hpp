@@ -1,4 +1,4 @@
-#ifndef BILBIOTECA_HPP
+#ifndef BIBLIOTECA_HPP
 #define BIBLIOTECA_HPP
 #include <iostream>
 #include <string>

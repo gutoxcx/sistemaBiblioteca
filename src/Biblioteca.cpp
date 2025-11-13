@@ -23,18 +23,22 @@ void Biblioteca::adicionarLivro(Livro livro) {
     if(isLivroExistente(livro.getTituloLivro()) == false) {
         livros[indexUltimoLivro] = livro;
         indexUltimoLivro++;
-        cout << "Livro adiconado com sucesso!\n";
+        cout << livro.getTituloLivro() << "Adiconado com sucesso!\n";
     } else {
         cout << "O livro já existe no sistema.\n";
     }
 }
 
 void Biblioteca::buscarPeloTitulo(string tituloLivro) {
+    bool isEncontrado = false;
     for(int i = 0; i <= indexUltimoLivro; i++){
         if(livros[i].getTituloLivro() == tituloLivro){
             getInfoLivro(livros[i]);
+            isEncontrado = true;
             break;
         }
+    } if(isEncontrado == false) {
+        cout << "O livro não foi encontrado no sistema.\n";
     }
 }
 

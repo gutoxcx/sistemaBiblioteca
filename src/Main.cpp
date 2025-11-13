@@ -11,9 +11,9 @@ int main() {
     Biblioteca bib;
 
     while(true) {
-        cout << "--- OPÇÕES:";
+        cout << "--- OPÇÕES:\n";
         cout << "[ 1 ] Adicionar livro\n";
-        cout << "[ 2 ] Buscar pelo ID\n";
+        cout << "[ 2 ] Buscar pelo título\n";
         cout << "[ 3 ] Buscar pelo autor\n";
         cout << "[ 4 ] Mostrar todos os livros";
         cout << "--- Para sair, digite 0";
