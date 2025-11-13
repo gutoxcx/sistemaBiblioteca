@@ -11,7 +11,7 @@ void Biblioteca::getInfoLivro(Livro livro) {
 }
 
 bool Biblioteca::isLivroExistente(string tituloLivro) {
-    for(int i = 0; i <= indexUltimoLivro; i++) {
+    for(int i = 0; i < indexUltimoLivro; i++) {
         if(livros[i].getTituloLivro() == tituloLivro) {
             return true;
             break;
@@ -31,7 +31,7 @@ void Biblioteca::adicionarLivro(Livro livro) {
 
 void Biblioteca::buscarPeloTitulo(string tituloLivro) {
     bool isEncontrado = false;
-    for(int i = 0; i <= indexUltimoLivro; i++){
+    for(int i = 0; i < indexUltimoLivro; i++){
         if(livros[i].getTituloLivro() == tituloLivro){
             getInfoLivro(livros[i]);
             isEncontrado = true;
@@ -43,7 +43,7 @@ void Biblioteca::buscarPeloTitulo(string tituloLivro) {
 }
 
 void Biblioteca::buscarPeloAutor(string autorLivro) {
-    for(int i = 0; i <= indexUltimoLivro; i++){
+    for(int i = 0; i < indexUltimoLivro; i++){
         if(livros[i].getAutorLivro() == autorLivro) {
             getInfoLivro(livros[i]);
             break;
